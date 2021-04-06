@@ -32,7 +32,7 @@ function MovieDetails({ match }) {
     };
     fetchMovie();
     fetchCredits();
-  }, []);
+  }, [match]);
 
   return (
     <div>
