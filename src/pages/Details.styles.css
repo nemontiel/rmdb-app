@@ -1,0 +1,29 @@
+* {
+  color: white;
+}
+
+.details__banner {
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+}
+
+.details {
+  padding: 20px;
+}
+
+.cast__image {
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.cast__slide {
+  object-fit: contain;
+  width: 100%;
+  max-height: 150px;
+  margin-right: 10px;
+  transition: transform 450ms;
+  border-radius: 1vw;
+}
