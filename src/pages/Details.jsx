@@ -16,7 +16,7 @@ function MovieDetails({ match }) {
         .then((response) => {
           //console.log(response.data);
           setMovie(response.data);
-        }, []);
+        });
     };
 
     const fetchCredits = async () => {
