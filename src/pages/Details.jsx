@@ -7,34 +7,32 @@ function MovieDetails({ match }) {
   const [movie, setMovie] = useState({});
   const [credits, setCredits] = useState([]);
 
-  useEffect(
-    () => {
-      const fetchMovie = async () => {
-        await axios
-          .get(
-            `https://api.themoviedb.org/3/movie/${match.params.id}?api_key=af22f782f0320d8121a524a3bb0789d7&language=en-US`
-          )
-          .then((response) => {
-            //console.log(response.data);
-            setMovie(response.data);
-          });
-      };
+  useEffect(() => {
+    const fetchMovie = async () => {
+      await axios
+        .get(
+          `https://api.themoviedb.org/3/movie/${match.params.id}?api_key=af22f782f0320d8121a524a3bb0789d7&language=en-US`
+        )
+        .then((response) => {
+          //console.log(response.data);
+          setMovie(response.data);
+        });
+    };
 
-      const fetchCredits = async () => {
-        await axios
-          .get(
-            `https://api.themoviedb.org/3/movie/${match.params.id}/credits?api_key=af22f782f0320d8121a524a3bb0789d7&language=en-US`
-          )
-          .then((response) => {
-            //console.log(response.data);
-            //console.log(response.data.cast);
-            setCredits(response.data.cast);
-          });
-      };
-      fetchMovie();
-      fetchCredits();
-    } /*[match.params.id]*/
-  );
+    const fetchCredits = async () => {
+      await axios
+        .get(
+          `https://api.themoviedb.org/3/movie/${match.params.id}/credits?api_key=af22f782f0320d8121a524a3bb0789d7&language=en-US`
+        )
+        .then((response) => {
+          //console.log(response.data);
+          //console.log(response.data.cast);
+          setCredits(response.data.cast);
+        });
+    };
+    fetchMovie();
+    fetchCredits();
+  }, [match.params.id]);
 
   return (
     <div>
