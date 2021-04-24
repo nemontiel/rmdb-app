@@ -1,0 +1,10 @@
+.autocom__box {
+  background-color: rgba(32, 30, 30, 0.8);
+  border-radius: 10px;
+}
+
+input {
+  color: black;
+  width: 200px;
+  min-width: 50%;
+}
