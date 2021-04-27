@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import "./Search.styles.css";
 import ResultContainer from "../components/ResultContainer";
 import { Link } from "react-router-dom";
-import Banner from "../components/Banner";
 
 export const Search = () => {
   const [query, setQuery] = useState("");
