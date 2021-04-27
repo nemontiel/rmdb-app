@@ -15,8 +15,8 @@ class ErrorBoundary extends React.Component {
     if (this.state.hasError) {
       return (
         <div>
-          oops, something went wrong
-          <img src={spider} />
+          Something went wrong!!
+          <img src={spider} alt="oops!" />
         </div>
       );
     }
