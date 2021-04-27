@@ -25,7 +25,7 @@ function Banner() {
         <h1 className="banner__title">{movie?.title || movie?.orignal_name}</h1>
 
         <div className="banner__buttons">
-          <Link to={`/${movie?.id}`}>
+          <Link to={`/movie/${movie?.id}`}>
             <button className="banner__button">Details</button>
           </Link>
         </div>

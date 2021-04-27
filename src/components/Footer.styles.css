@@ -1,0 +1,19 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(83, 78, 78, 0.1);
+
+  bottom: 0;
+  height: 60px;
+  justify-content: space-between;
+  color: white;
+}
+
+.info {
+  margin: 20px;
+}
+
+.dev {
+  margin: 20px;
+}

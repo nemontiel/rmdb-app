@@ -1,0 +1,21 @@
+.not__found {
+  font-size: 2em;
+  padding: 50px;
+  color: white;
+  height: 100vh;
+}
+
+.not__found a {
+  color: black;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 2px;
+  background: rgb(196, 196, 50);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.not__found a:hover {
+  background-color: black;
+  color: rgb(196, 196, 50);
+}

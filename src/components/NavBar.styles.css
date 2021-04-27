@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-content: end;
+
   position: fixed;
   width: 100%;
   background-color: rgb(0, 0, 0, 0.8);
@@ -11,9 +11,10 @@
 
 .name a {
   text-decoration: none;
+  color: white;
 }
 
-.searchbar {
-  position: relative;
-  justify-self: center;
+.search a {
+  text-decoration: none;
+  color: white;
 }

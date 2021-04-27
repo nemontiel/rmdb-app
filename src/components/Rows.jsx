@@ -9,7 +9,7 @@ function Rows({ title, fetchMovies }) {
       <h2>{title}</h2>
       <div className="row__posters">
         {fetchMovies.map((movie) => (
-          <Link to={`/${movie.id}`}>
+          <Link to={`/movie/${movie.id}`}>
             <img
               key={movie.id}
               className="row__poster"

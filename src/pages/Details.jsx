@@ -35,7 +35,7 @@ function MovieDetails({ match }) {
   }, [match.params.id]);
 
   return (
-    <div>
+    <div className="details__page">
       <div
         className="details__banner"
         style={{

@@ -39,7 +39,7 @@ export const Search = () => {
           {results.length > 0 && (
             <ul className="results">
               {results.map((movie) => (
-                <Link to={`/${movie?.id}`}>
+                <Link to={`/movie/${movie?.id}`}>
                   <li key={movie.id}>
                     <ResultContainer movie={movie} />
                   </li>
