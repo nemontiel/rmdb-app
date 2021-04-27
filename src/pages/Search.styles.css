@@ -9,6 +9,7 @@ input {
 
 .wrapper {
   background-color: black;
+  height: 100vh;
 }
 .search__input {
   padding-top: 50px;
