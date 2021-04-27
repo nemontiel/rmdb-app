@@ -5,17 +5,25 @@
   height: 100vh;
 }
 
-.not__found a {
-  color: black;
-  border: 1px solid white;
-  border-radius: 15px;
-  padding: 2px;
-  background: rgb(196, 196, 50);
-  font-weight: bold;
-  text-decoration: none;
+.not__found a:hover {
+  color: #000;
+  background-color: #e6e6e6;
+  transition: all 0.2s;
 }
 
-.not__found a:hover {
-  background-color: black;
-  color: rgb(196, 196, 50);
+.not__found a {
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: rgba(51, 51, 51, 0.5);
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+  text-decoration: none;
 }
